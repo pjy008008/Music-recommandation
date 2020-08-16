@@ -3,16 +3,43 @@
 <head>
   <title>Music recommandation</title>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin: 0;
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  h1{
+    margin: 0px;
+    border-bottom: 3px gray solid;
+    font-size:45px;
+    text-align: center;
+    padding: 30px;
+  }
+  ul{
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin:0;
+    border-bottom: 3px gray solid;
+    padding-left: 0;
+  }
+  .genre{
+    font-size: 20px;
+  }
+  </style>
 </head>
 <body>
-  <h1><a href="index.html">Music recommandation</a></h1>
-  <h2>장르</h2>
+  <h1><a href="index.html" style="color:black">Music recommandation</a></h1>
   <ul>
-    <li><a href="foreign pop.html">해외 팝</a></li>
-    <li><a href="foreign hiphop.html">해외 힙합</a></li>
-    <li><a href="korean ballad.html">국내 발라드</a></li>
-    <li><a href="korean hiphop.html">국내 힙합</a></li>
-    <li><a href="korean pop.html">국내 팝</a></li>
+    <li><a href="foreign pop.html" class="genre">해외 팝</a></li>
+    <li><a href="foreign hiphop.html" class="genre">해외 힙합</a></li>
+    <li><a href="korean ballad.html" class="genre">국내 발라드</a></li>
+    <li><a href="korean hiphop.html" class="genre">국내 힙합</a></li>
+    <li><a href="korean pop.html" class="genre">국내 팝</a></li>
   </ul>
 <p>주관적으로 선정한 명곡모음</p>
 </body>
