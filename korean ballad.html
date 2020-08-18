@@ -1,22 +1,65 @@
 <!doctype html>
 <html>
 <head>
-  <title>Music recommandation</title>
+  <title>국내 발라드</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin: 0;
+    background-color: black;
+    color: white;
+  }
   a{
-    color:black;
+    color:white;
     text-decoration: none;
   }
   h1{
+    margin: 0px;
+    border-bottom: 1px white solid;
     font-size:45px;
     text-align: center;
+    padding: 30px;
+    color: white;
+  }
+  h3{
+    border-right: 1px white solid;
+    padding-left: 20px;
+    margin: 0;
+    padding: 20px;
+    color: white;
+  }
+  li{
+    font-size: 20px;
+    color: Dimgrey;
+    list-style: none;
+  }
+  #genre ul{
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin:0;
+    border-bottom: 1px white solid;
+    padding-left: 0;
+    color: white;
+  }
+  #contents {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  #contents ul{
+    margin: 10px;
+    padding: 0;
+    margin-top: 0;
+  }
+  #contents li{
+    padding: 10px;
   }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" style="color:brown">Music recommandation</a></h1>
-  <h2>장르</h2>
+  <h1><a href="index.html">Music recommandation</a></h1>
+<div id="genre">
   <ul>
     <li><a href="foreign pop.html">해외 팝</a></li>
     <li><a href="foreign hiphop.html">해외 힙합</a></li>
@@ -24,13 +67,18 @@
     <li><a href="korean hiphop.html">국내 힙합</a></li>
     <li><a href="korean pop.html">국내 팝</a></li>
   </ul>
-  <h3>국내 발라드</h3>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=JLT8qOdpDPM"target="_blank">적재 - 별 보러 가자</a></li>
-    <li><a href="https://www.youtube.com/watch?v=l7PgoVBZpc8"target="_blank">폴킴 - 커피 한 잔 할래요</a></li>
-    <li><a href="https://www.youtube.com/watch?v=YBzJ0jmHv-4"target="_blank">폴킴 - 너를 만나</a></li>
-    <li><a href="https://www.youtube.com/watch?v=9jFZdu0zTEA"target="_blank">폴킴 - 비</a></li>
-    <li><a href="https://www.youtube.com/watch?v=ba7mB8oueCY"target="_blank">박혜원 - 시든 꽃에 물을 주듯</a></li>
-  </ul>
+</div>
+<div id="contents">
+    <h3>국내 발라드</h3>
+  <div>
+    <ul>
+      <li><a href="https://www.youtube.com/watch?v=JLT8qOdpDPM"target="_blank">적재 - 별 보러 가자</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/JLT8qOdpDPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li><a href="https://www.youtube.com/watch?v=l7PgoVBZpc8"target="_blank">폴킴 - 커피 한 잔 할래요</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/l7PgoVBZpc8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li><a href="https://www.youtube.com/watch?v=YBzJ0jmHv-4"target="_blank">폴킴 - 너를 만나</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/YBzJ0jmHv-4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li><a href="https://www.youtube.com/watch?v=9jFZdu0zTEA"target="_blank">폴킴 - 비</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/9jFZdu0zTEA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <li><a href="https://www.youtube.com/watch?v=tMhizg-1OzA"target="_blank">박혜원 - 시든 꽃에 물을 주듯</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/tMhizg-1OzA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </ul>
+  </div>
+</div>
 </body>
 </html>

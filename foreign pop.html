@@ -1,32 +1,37 @@
 <!doctype html>
 <html>
 <head>
-  <title>Music recommandation</title>
+  <title>해외 팝</title>
   <meta charset="utf-8">
   <style>
   body{
     margin: 0;
+    background-color: black;
+    color: white;
   }
   a{
-    color:black;
+    color:white;
     text-decoration: none;
   }
   h1{
     margin: 0px;
-    border-bottom: 3px gray solid;
+    border-bottom: 1px white solid;
     font-size:45px;
     text-align: center;
     padding: 30px;
+    color: white;
   }
   h3{
-    border-right: 3px gray solid;
+    border-right: 1px white solid;
     padding-left: 20px;
     margin: 0;
     padding: 20px;
+    color: white;
   }
   li{
     font-size: 20px;
     color: Dimgrey;
+    list-style: none;
   }
   #genre ul{
     text-align: center;
@@ -34,12 +39,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin:0;
-    border-bottom: 3px gray solid;
+    border-bottom: 1px white solid;
     padding-left: 0;
+    color: white;
   }
   #contents {
     display: grid;
     grid-template-columns: 250px 1fr;
+  }
+  #contents ul{
+    margin: 10px;
+    padding: 0;
+    margin-top: 0;
+  }
+  #contents li{
+    padding: 10px;
   }
   </style>
 </head>
@@ -47,7 +61,7 @@
   <h1><a href="index.html">Music recommandation</a></h1>
   <div id="genre">
     <ul>
-      <li><a href="foreign pop.html" class="genre" style="color:indigo">해외 팝</a></li>
+      <li><a href="foreign pop.html" class="genre">해외 팝</a></li>
       <li><a href="foreign hiphop.html" class="genre">해외 힙합</a></li>
       <li><a href="korean ballad.html" class="genre">국내 발라드</a></li>
       <li><a href="korean hiphop.html" class="genre">국내 힙합</a></li>
@@ -55,14 +69,14 @@
     </ul>
   </div>
   <div id="contents">
-  <h3>해외 팝</h3>
-    <div>
-      <ul>
-        <li><a href="https://www.youtube.com/watch?v=UPOT2tgY9QQ"target="_blank">Ed Sheeran - South of the border</a></li>
-        <li><a href="https://www.youtube.com/watch?v=-ua7EIxKqoo"target="_blank">Dua Lipa - Blow your mind</a></li>
-        <li><a href="https://www.youtube.com/watch?v=UMW9NmlX1ws"target="_blank">Lauv - Changes</a></li>
-      </ul>
-    </div>
-</div>
+    <h3>해외 팝</h3>
+      <div>
+        <ul>
+          <li><a href="Ed Sheeran.html">Ed Sheeran</a> - <a href="https://www.youtube.com/watch?v=UPOT2tgY9QQ"target="_blank">South of the border</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/UPOT2tgY9QQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <li><a href="https://www.youtube.com/watch?v=-ua7EIxKqoo"target="_blank">Dua Lipa - Blow your mind</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/-ua7EIxKqoo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <li><a href="https://www.youtube.com/watch?v=UMW9NmlX1ws"target="_blank">Lauv - Changes</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/UMW9NmlX1ws" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </ul>
+      </div>
+  </div>
 </body>
 </html>

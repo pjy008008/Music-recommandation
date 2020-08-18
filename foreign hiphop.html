@@ -1,36 +1,84 @@
 <!doctype html>
 <html>
 <head>
-  <title>Music recommandation</title>
+  <title>해외 힙합</title>
   <meta charset="utf-8">
   <style>
+  body{
+    background-color: black;
+    margin: 0;
+    color: white;
+  }
   a{
-    color:black;
+    color:white;
     text-decoration: none;
   }
   h1{
+    margin: 0px;
+    border-bottom: 1px white solid;
     font-size:45px;
     text-align: center;
+    padding: 30px;
+    color: white;
+  }
+  h3{
+    border-right: 1px white solid;
+    padding-left: 20px;
+    margin: 0;
+    padding: 20px;
+    color: white;
+  }
+  li{
+    font-size: 20px;
+    color: Dimgrey;
+    list-style: none;
+  }
+  #genre ul{
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin:0;
+    border-bottom: 1px white solid;
+    padding-left: 0;
+    color: white;
+  }
+  #contents {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  #contents ul{
+    margin: 10px;
+    padding: 0;
+    margin-top: 0;
+  }
+  #contents li{
+    padding: 10px;
   }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" style="color:brown">Music recommandation</a></h1>
-  <h2>장르</h2>
-  <ul>
-    <li><a href="foreign pop.html" >해외 팝</a></li>
-    <li><a href="foreign hiphop.html" >해외 힙합</a></li>
-    <li><a href="korean ballad.html" >국내 발라드</a></li>
-    <li><a href="korean hiphop.html">국내 힙합</a></li>
-    <li><a href="korean pop.html" >국내 팝</a></li>
-  </ul>
-  <h3>해외 힙합</h3>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=dT8dmvAzIqA"target="_blank">Denzel Curry - Ultimate</a></li>
-    <li><a href="https://www.youtube.com/watch?v=r_0JjYUe5jo"target="_blank">Eminem - Godzilla</a></li>
-    <li><a href="https://www.youtube.com/watch?v=l0U7SxXHkPY"target="_blank">Future - Life is good</a></li>
-    <li><a href="https://www.youtube.com/watch?v=wXhTHyIgQ_U"target="_blank">Post Malone - Circle</a></li>
-    <li><a href="https://www.youtube.com/watch?v=ba7mB8oueCY"target="_blank">Post Malone - Goodbye</a></li>
-  </ul>
+  <h1><a href="index.html">Music recommandation</a></h1>
+  <div id="genre">
+    <ul>
+      <li><a href="foreign pop.html" >해외 팝</a></li>
+      <li><a href="foreign hiphop.html" >해외 힙합</a></li>
+      <li><a href="korean ballad.html" >국내 발라드</a></li>
+      <li><a href="korean hiphop.html">국내 힙합</a></li>
+      <li><a href="korean pop.html" >국내 팝</a></li>
+    </ul>
+  </div>
+  <div id="contents">
+    <h3>해외 힙합</h3>
+      <div>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=r_0JjYUe5jo"target="_blank">Eminem - Godzilla</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/r_0JjYUe5jo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=l0U7SxXHkPY"target="_blank">Future - Life is good</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/l0U7SxXHkPY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=wXhTHyIgQ_U"target="_blank">Post Malone - Circle</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/wXhTHyIgQ_U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=ba7mB8oueCY"target="_blank">Post Malone - Goodbye</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/ba7mB8oueCY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=dT8dmvAzIqA"target="_blank">Denzel Curry - Ultimate</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/dT8dmvAzIqA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </ul>
+      </div>
+  </div>
 </body>
 </html>

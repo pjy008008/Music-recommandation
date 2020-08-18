@@ -1,42 +1,90 @@
 <!doctype html>
 <html>
 <head>
-  <title>Music recommandation</title>
+  <title>한국 팝</title>
   <meta charset="utf-8">
   <style>
+  body{
+    margin: 0;
+    background-color: black;
+    color: white;
+  }
   a{
-    color:black;
+    color:white;
     text-decoration: none;
   }
   h1{
+    margin: 0px;
+    border-bottom: 1px white solid;
     font-size:45px;
     text-align: center;
+    padding: 30px;
+    color: white;
+  }
+  h3{
+    border-right: 1px white solid;
+    padding-left: 20px;
+    margin: 0;
+    padding: 20px;
+    color: white;
+  }
+  li{
+    font-size: 20px;
+    color: Dimgrey;
+    list-style: none;
+  }
+  #genre ul{
+    text-align: center;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin:0;
+    border-bottom: 1px white solid;
+    padding-left: 0;
+    color: white;
+  }
+  #contents {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+  #contents ul{
+    margin: 10px;
+    padding: 0;
+    margin-top: 0;
+  }
+  #contents li{
+    padding: 10px;
   }
   </style>
 </head>
 <body>
-  <h1><a href="index.html" style="color:brown">Music recommandation</a></h1>
-  <h2>장르</h2>
-  <ul>
-    <li><a href="foreign pop.html">해외 팝</a></li>
-    <li><a href="foreign hiphop.html">해외 힙합</a></li>
-    <li><a href="korean ballad.html">국내 발라드</a></li>
-    <li><a href="korean hiphop.html">국내 힙합</a></li>
-    <li><a href="korean pop.html">국내 팝</a></li>
-  </ul>
-  <h3>국내 팝</h3>
-  <ul>
-    <li><a href="https://www.youtube.com/watch?v=fE2h3lGlOsk"target="_blank">ITZY - WANNABE</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/fE2h3lGlOsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <li><a href="https://www.youtube.com/watch?v=ioNng23DkIM"target="_blank">BLACKPINK - How You Like That</a></li>
-    <li><a href="https://www.youtube.com/watch?v=2S24-y0Ij3Y"target="_blank">BLACKPINK - Kill This Love</a></li>
-    <li><a href="https://www.youtube.com/watch?v=Amq-qlqbjYA"target="_blank">BLACKPINK - 마지막처럼</a></li>
-    <li><a href="https://www.youtube.com/watch?v=XsX3ATc3FbA"target="_blank">BTS - 작은 것들을 위한 시</a></li>
-    <li><a href="https://www.youtube.com/watch?v=pBuZEGYXA6E"target="_blank">BTS - IDOL</a></li>
-    <li><a href="https://www.youtube.com/watch?v=pBuZEGYXA6E"target="_blank">BTS - 불타오르네</a></li>
-    <li><a href="https://www.youtube.com/watch?v=kTlv5_Bs8aw"target="_blank">BTS - MIC Drop</a></li>
-    <li><a href="https://www.youtube.com/watch?v=WyiIGEHQP8o"target="_blank">Red Velvet - 빨간 맛</a></li>
-    <li><a href="https://www.youtube.com/watch?v=i0p1bmr0EmE"target="_blank">Twice - What Is Love?</a></li>
-    <li><a href="https://www.youtube.com/watch?v=V2hlQkVJZhE"target="_blank">Twice - LIKEY</a></li>
-  </ul>
+  <h1><a href="index.html">Music recommandation</a></h1>
+  <div id="genre">
+    <ul>
+      <li><a href="foreign pop.html">해외 팝</a></li>
+      <li><a href="foreign hiphop.html">해외 힙합</a></li>
+      <li><a href="korean ballad.html">국내 발라드</a></li>
+      <li><a href="korean hiphop.html">국내 힙합</a></li>
+      <li><a href="korean pop.html">국내 팝</a></li>
+    </ul>
+  </div>
+  <div id="contents">
+    <h3>국내 팝</h3>
+    <div>
+      <ul>
+        <li><a href="https://www.youtube.com/watch?v=fE2h3lGlOsk"target="_blank">ITZY - WANNABE</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/fE2h3lGlOsk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=ioNng23DkIM"target="_blank">BLACKPINK - How You Like That</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/ioNng23DkIM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=2S24-y0Ij3Y"target="_blank">BLACKPINK - Kill This Love</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/2S24-y0Ij3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=Amq-qlqbjYA"target="_blank">BLACKPINK - 마지막처럼</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/Amq-qlqbjYA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=XsX3ATc3FbA"target="_blank">BTS - 작은 것들을 위한 시</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/XsX3ATc3FbA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=pBuZEGYXA6E"target="_blank">BTS - IDOL</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/pBuZEGYXA6E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=4ujQOR2DMFM"target="_blank">BTS - 불타오르네</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/4ujQOR2DMFM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=kTlv5_Bs8aw"target="_blank">BTS - MIC Drop</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/kTlv5_Bs8aw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=WyiIGEHQP8o"target="_blank">Red Velvet - 빨간 맛</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/WyiIGEHQP8o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=i0p1bmr0EmE"target="_blank">Twice - What Is Love?</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/i0p1bmr0EmE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <li><a href="https://www.youtube.com/watch?v=V2hlQkVJZhE"target="_blank">Twice - LIKEY</a></li><iframe width="560" height="315" src="https://www.youtube.com/embed/V2hlQkVJZhE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </ul>
+    </div>
+  </div>
 </body>
 </html>
